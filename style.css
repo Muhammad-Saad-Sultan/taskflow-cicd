@@ -1,27 +1,275 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+/* =========================
+   GLOBAL CSS (ALL PAGES)
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-header, footer {
-    background: #333;
-    color: white;
-    padding: 10px;
+
+
+body{
+
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f7ff;
+    color:#333;
+
 }
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 10px;
+
+
+a{
+
+    text-decoration:none;
+
 }
-table {
-    width: 100%%;
-    border-collapse: collapse;
+
+
+.container{
+
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+
 }
-th, td {
-    padding: 8px;
-    border: 1px solid #555;
+
+
+/* =========================
+   NAVBAR (ALL PAGES)
+========================= */
+
+
+.navbar{
+
+    background:linear-gradient(90deg,#667eea,#764ba2);
+    padding:20px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
 }
-button {
-    padding: 8px 15px;
-    margin: 5px;
+
+
+.logo{
+
+    font-size:25px;
+    font-weight:bold;
+
+}
+
+
+.nav-links a{
+
+    color:white;
+    margin-left:20px;
+
+}
+
+
+
+/* =========================
+        INDEX.HTML
+========================= */
+
+
+.hero{
+
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+}
+
+
+.hero-card{
+
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 20px 40px #ddd;
+
+}
+
+
+.hero h1{
+
+    font-size:50px;
+    color:#667eea;
+
+}
+
+
+.hero p{
+
+    margin:20px;
+
+}
+
+
+
+.btn{
+
+    background:#667eea;
+    color:white;
+    padding:14px 25px;
+    border-radius:30px;
+    display:inline-block;
+
+}
+
+
+
+/* =========================
+      ADD-TASK.HTML
+========================= */
+
+
+.form-card{
+
+    background:white;
+    margin:40px auto;
+    max-width:650px;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 20px 40px #ddd;
+
+}
+
+
+input,textarea,select{
+
+    width:100%;
+    padding:14px;
+    margin:10px 0 20px;
+    border-radius:12px;
+    border:1px solid #ddd;
+
+}
+
+
+textarea{
+
+    height:120px;
+
+}
+
+
+.submit{
+
+    width:100%;
+    padding:15px;
+    background:#764ba2;
+    color:white;
+    border:none;
+    border-radius:15px;
+    font-size:18px;
+
+}
+
+
+
+/* =========================
+      TASK-LIST.HTML
+========================= */
+
+
+.table-card{
+
+background:white;
+margin-top:40px;
+padding:30px;
+border-radius:25px;
+box-shadow:0 20px 40px #ddd;
+
+}
+
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+
+th{
+
+background:#667eea;
+color:white;
+
+}
+
+
+td,th{
+
+padding:15px;
+text-align:center;
+
+}
+
+
+.status{
+
+padding:7px 15px;
+border-radius:20px;
+background:#d4edda;
+color:green;
+
+}
+
+
+
+/* =========================
+      TASK-DETAIL.HTML
+========================= */
+
+
+.detail-card{
+
+background:white;
+margin-top:40px;
+padding:40px;
+border-radius:25px;
+box-shadow:0 20px 40px #ddd;
+
+}
+
+
+.badge{
+
+background:#ffcc00;
+padding:8px 20px;
+border-radius:20px;
+
+}
+
+
+
+/* =========================
+      ABOUT.HTML
+========================= */
+
+
+.about-card{
+
+margin-top:40px;
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 20px 40px #ddd;
+
+}
+
+
+footer{
+
+margin-top:50px;
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+
 }
